@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --TEXT-COLOR: white;
+    --BG-COLOR: rgba(0, 0, 0, 0.904); 
+
+    --FF: 'Roboto', sans-serif;
+}
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/peopleQueue.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;   
+    justify-content: space-evenly;
+}
+
+.main {
+    color: var(--TEXT-COLOR);
+    font-size: 1.5rem;
+    font-family: var(--FF);
+    font-weight: bold;
+    width: 50vw;
+    height: 50vh;
+    background: var(--BG-COLOR);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 10px solid rgb(39, 37, 37);
+}
+
+.number {
+    font-size: 3rem;
+}
+
+.button {
+    margin: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button--increment {
+    background: green;
+}
+
+.button--save {
+    background: rgb(139, 45, 45);
+}

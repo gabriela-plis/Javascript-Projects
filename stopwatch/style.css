@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* RESET */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+    --FF: 'Open Sans', sans-serif;
+
+    --TEXT-COLOR: white;
+    --BORDER-COLOR: white;
+}
+
+/* BASIC STYLE */
+
+body {
+    font-family: var(--FF);
+    color: var(--TEXT-COLOR);
+    width: 100vw;
+    height: 100vh;
+}
+
+body, .container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main {
+    display: contents;
+}
+
+.container {
+    background-color: orange;
+    border-radius: 15px;
+    width: 50vw;
+    height: 50vh;
+}
+
+/* SPECIFIC CLASSES */
+
+.title {
+    font-size: 2.5rem;
+}
+
+.stopwatch {
+    font-size: 3rem;
+}
+
+.button {
+    color: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    border: 2px solid var(--BORDER-COLOR);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin: 0 1rem;
+    cursor: pointer;
+}

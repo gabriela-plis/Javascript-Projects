@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="js/main.js" defer></script>
+    
+</head>
+<body>
+    <div class="test">
+        <header class="header">
+            <h1 class="header__title">Sweet cows</h1>
+        </header>
+        <main>
+            <div class="button button--left"><button class="button--previous"></button></div>
+            <section class="slides">
+                <img src="images/cow1.jpg" alt="cow" class="image active" data-number="1" width="800" height="500">
+                <img src="images/cow2.jpg" alt="cow" class="image" data-number="2" width="800" height="500">
+                <img src="images/cow3.jpg" alt="cow" class="image" data-number="3" width="800" height="500">
+                <img src="images/cow4.jpg" alt="cow" class="image" data-number="4" width="800" height="500">
+                <img src="images/cow5.jpg" alt="cow" class="image" data-number="5" width="800" height="500">
+                <img src="images/cow6.jpg" alt="cow" class="image" data-number="6" width="800" height="500">
+                
+            </section>
+            <div class="button button--right"><button class="button--next"></button></div>
+            <div class="container_slider_dots">
+                <div class="slider_dots"></div>
+            </div>
+        </main>
+    </div>
+    <template class="dot_template"> <button class="dot" data-number=""></button> </template>
+    <template class="image_template"> <img src="" alt="cow" class="image" data-number="" width="800" height="500"> </template>
+</body>
+</html>

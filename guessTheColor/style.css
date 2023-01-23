@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* RESET */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+    --FF: 'Open Sans', sans-serif;
+
+    --BG-COLOR: #42a5f5;
+    --BRIGHTER-BG-COLOR: #64b5f6;
+    --BG-COLOR-BOARD: rgb(224, 224, 224);
+    --WIDTH: 100vw;
+}
+
+/* BASIC STYLE */
+
+main {
+    display: contents;
+}
+
+body {
+    font-family: var(--FF);
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 20% 70%;
+}
+
+
+.header, .introduction {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header {
+    background-color: var(--BG-COLOR);
+    font-size: 1.8rem;
+}
+
+.introduction {
+    background-color: var(--BRIGHTER-BG-COLOR);
+    font-size: 1.5rem;
+}
+
+.colors_board {
+    background-color: var(--BG-COLOR-BOARD);
+    padding: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+
+    position: relative;
+}
+
+.button {
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: black;
+
+}
+
+.window {
+    width: min(90%, 600px);
+    height: min(90%, 250px);
+    background: white;
+    border: 7px solid black;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window_text {
+    font-size: 2rem;
+}
+
+.attempt {
+    font-weight: bold;
+}
