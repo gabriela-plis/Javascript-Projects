@@ -1,0 +1,25 @@
+{
+  "records": [
+    {
+      "type": "invoice",
+      "person": "ken",
+      "details": "web design work",
+      "amount": 300,
+      "id": 1
+    },
+    {
+      "type": "payment",
+      "person": "matthew",
+      "details": "marketing work",
+      "amount": 200,
+      "id": 2
+    },
+    {
+      "type": "Invoice",
+      "person": "gabriel",
+      "details": "plum work",
+      "amount": 500,
+      "id": 3
+    }
+  ]
+}
